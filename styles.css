@@ -310,4 +310,29 @@ i{
     .img-camperas{
         height: 740px;
     }
+
+    /* CONTACTO */
+
+    .header{
+        font-size: 45px;
+    }
+    #fname{
+        font-size: 30px;
+        height: 100px;
+    }
+    #lname{
+        font-size: 30px;
+        height: 100px;
+    }
+    #email{
+        font-size: 30px;
+        height: 100px;
+    }
+    #phone{
+        font-size: 30px;
+        height: 100px;
+    }
+    .form-control{
+        font-size: 30px;
+    }
 }
