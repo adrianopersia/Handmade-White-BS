@@ -127,6 +127,19 @@ i{
     border-radius: 6px;
 }
 
+/* CONTACTO */
+
+.header{
+    color: black;
+    font-size: 27px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+.btn{
+    background-color: rgb(179, 179, 179);
+    color: black;
+}
+
 @media only screen and (min-width:425px){
     .img-inicio{
         height: 280px;
