@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    text-align: center;
+}
+.logo{
+    width: 300px;
+    height: 100%;
+    text-align: center;
+}
+.nav{
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.nav-link{
+    color: black;
+}
+main{
+    background-color: white;
+}
+video{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+.row{
+    justify-content: center;
+    margin: 0;
+}
+.img-inicio{
+    height: 225px;
+    width: auto;
+    padding: 1%;
+}
+.contenedor-imagenes{
+    padding: 2%;
+    justify-items: center;
+}
+.borde-texto{
+    border-top: 1px solid grey;
+    text-align: center;
+    margin-top: 2%;
+    padding: 0;
+    width: 90%;
+}
+.texto{
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 2%;
+    height: 350px;
+}
+.borde-interno-texto{
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 6px;
+    margin: 1%;
+    height: 300px;
+}
+.grilla-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+footer{
+    background-color: white;
+    display: block;
+    border-top: 1px solid grey;
+}
+.navbar{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    display: inline-block;
+    grid-column: 1/2;
+    text-align: left;
+}    
+.navbar-nav{
+    border-top: 1px solid grey;
+}
+.p-footer{
+    margin: 0;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: grey;
+}
+.logo-footer{
+    width: 160px;
+    height: 70px;
+    grid-column: 2/3;
+}
+i{
+    font-size: 40px;
+    grid-column: 2/3;
+    margin-top: 10px;
+}
+
+/* INDUMENTARIA */
+
+.titulos-indumentaria{
+    font-weight: 700;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    text-align: center;
+}
+.img-buzo{
+    height: 190px;
+    width: auto;
+    padding: 1%;
+    border-radius: 6px;
+}
+.img-remeras{
+    height: 190px;
+    width: auto;
+    padding: 1%;
+    border-radius: 6px;
+}
+.img-camperas{
+    height: 190px;
+    width: auto;
+    padding: 1%;
+    border-radius: 6px;
+}
+
+/* CONTACTO */
+
+.header{
+    color: black;
+    font-size: 27px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+.btn{
+    background-color: rgb(179, 179, 179);
+    color: black;
+}
+
+@media only screen and (min-width:425px){
+    .img-inicio{
+        height: 280px;
+    }
+}
+@media only screen and (min-width:768px){
+    .logo{
+        height: 200px;
+        width: auto;
+    }
+    .nav{
+        font-size: 20px;
+    }
+    .img-inicio{
+        height: 250px;
+    }
+    video{
+        height: 400px;
+    }
+    .navbar-nav{
+        border-top: 1px solid grey;
+        font-size: 20px;
+        text-align: left;
+    }
+    .p-footer{
+        margin: 0;
+        font-size: 20px;
+    }
+    .logo-footer{
+        width: 260px;
+        height: 100px;
+        justify-items: center;
+    }
+    .redes i{
+        font-size: 50px;
+        text-align: center;
+        padding-left: 2%;
+    }
+
+    /* INDUMENTARIA */
+
+    .titulos-indumentaria{
+        font-size: 20px;
+    }
+    .img-buzo{
+        height: 250px;
+    }
+    .img-remeras{
+        height: 250px;
+    }
+    .img-camperas{
+        height: 250px;
+    }
+}
+@media only screen and (min-width:1024px){
+    .img-inicio{
+        height: 350px;
+    }
+
+    /* INDUMENTARIA */
+
+    .titulos-indumentaria{
+        font-size: 20px;
+    }
+    .img-buzo{
+        height: 320px;
+    }
+    .img-remeras{
+        height: 320px;
+    }
+    .img-camperas{
+        height: 320px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .img-inicio{
+        height: 500px;
+    }
+    .texto{
+        border: 2px solid grey;
+        border-radius: 6px;
+        margin: 2%;
+        height: 430px;
+    }
+    .borde-interno-texto{
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 6px;
+        margin: 1%;
+        height: 370px;
+        font-size: 25px;
+    }
+    .grilla-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+    footer{
+        background-color: white;
+        display: block;
+        border-top: 1px solid grey;
+    }    
+    .p-footer{
+        margin: 0;
+    }
+    .logo-footer{
+        width: auto;
+        height: 150px;
+        grid-column: 2/3;
+    }
+    .redes{
+        grid-column: 3/4;
+    }
+
+    /* INDUMENTARIA */
+
+    .titulos-indumentaria{
+        font-size: 25px;
+    }
+    .img-buzo{
+        height: 440px;
+    }
+    .img-remeras{
+        height: 440px;
+    }
+    .img-camperas{
+        height: 440px;
+    }
+}
+@media only screen and (min-width:1800px){
+    .nav{
+        font-size: 30px;
+    }
+    video{
+        height: 800px;
+    }
+    .img-inicio{
+        height: 600px;
+    }
+    .texto{
+        height: 450px;
+    } 
+    .navbar-nav{
+        font-size: 35px;
+        width: 170px;
+    }
+    .p-footer{
+        font-size: 35px;
+    }
+    .logo-footer{
+        height: 200px;
+    }
+    .redes i{
+        font-size: 80px;
+    }
+
+    /* INDUMENTARIA */
+
+    .titulos-indumentaria{
+        font-size: 35px;
+    }
+    .img-buzo{
+        height: 600px;
+    }
+    .img-remeras{
+        height: 600px;
+    }
+    .img-camperas{
+        height: 600px;
+    }
+
+    /* CONTACTO */
+
+    .header{
+        font-size: 45px;
+    }
+    #fname{
+        font-size: 30px;
+        height: 100px;
+    }
+    #lname{
+        font-size: 30px;
+        height: 100px;
+    }
+    #email{
+        font-size: 30px;
+        height: 100px;
+    }
+    #phone{
+        font-size: 30px;
+        height: 100px;
+    }
+    .form-control{
+        font-size: 30px;
+    }
+}
