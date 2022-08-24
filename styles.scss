@@ -13,10 +13,10 @@ header{
         justify-content: center;
         font-size: 14px;
         font-weight: 700;
-    }
-    a{
-        color: black;
-    }
+        a{
+            color: black;
+        }
+    } 
 }
 
 main{
@@ -26,18 +26,18 @@ main{
         height: 100%;
         padding: 1%;
     }
-    .img-inicio{
-        height: 225px;
-        width: auto;
-        padding: 1%;
-    }
-    .row{
-        justify-content: center;
-        margin: 0;
-    }
     .contenedor-imagenes{
         padding: 2%;
         justify-items: center;
+        .row{
+            justify-content: center;
+            margin: 0;
+            .img-inicio{
+                height: 225px;
+                width: auto;
+                padding: 1%;
+            }
+        }
     }
     .borde-texto{
         border-top: 1px solid grey;
@@ -45,18 +45,18 @@ main{
         margin-top: 2%;
         padding: 0;
         width: 90%;
-    }
-    .texto{
-        border: 2px solid grey;
-        border-radius: 6px;
-        margin: 2%;
-        height: 350px;
-    }
-    .borde-interno-texto{
-        border: 1px solid rgb(179, 179, 179);
-        border-radius: 6px;
-        margin: 1%;
-        height: 300px;
+        .texto{
+            border: 2px solid grey;
+            border-radius: 6px;
+            margin: 2%;
+            height: 350px;
+            .borde-interno-texto{
+                border: 1px solid rgb(179, 179, 179);
+                border-radius: 6px;
+                margin: 1%;
+                height: 300px;
+            }
+        }
     }
 }
 
@@ -78,19 +78,19 @@ main{
         display: inline-block;
         grid-column: 1/2;
         text-align: left;
+        .p-footer{
+            margin: 0;
+        }
+        .navbar-nav{
+            border-top: 1px solid grey;
+            a{
+                color: black;
+            }
+            a:hover{
+                color: grey;
+            }
+        }
     }    
-    .navbar-nav{
-        border-top: 1px solid grey;
-    }
-    .p-footer{
-        margin: 0;
-    }
-    a{
-        color: black;
-    }
-    a:hover{
-        color: grey;
-    }
     .logo-footer{
         width: 160px;
         height: 70px;
@@ -131,8 +131,8 @@ main{
     }
 }
 
-
 /* CONTACTO */
+
 main{
     .cabeza{
         color: black;
@@ -146,14 +146,13 @@ main{
     }
 }
 
-
 @media only screen and (min-width:425px){
     .img-inicio{
         height: 280px;
     }
 }
 @media only screen and (min-width:768px){
-    main{
+    header{
         .logo{
             height: 200px;
             width: auto;
@@ -161,11 +160,13 @@ main{
         .nav{
             font-size: 20px;
         }
-        .img-inicio{
-            height: 250px;
-        }
+    }
+    main{
         video{
             height: 300px;
+        }
+        .img-inicio{
+            height: 250px;
         }
     }
     .grilla-footer{
@@ -183,15 +184,17 @@ main{
             height: 100px;
             justify-items: center;
         }
-        .redes i{
-            font-size: 50px;
-            text-align: center;
-            padding-left: 2%;
+        .redes{
+            i{
+                font-size: 50px;
+                text-align: center;
+                padding-left: 2%;
+            }   
         }
     }
     
-
     /* INDUMENTARIA */
+
     main{
         .titulos-indumentaria{
             font-size: 20px;
@@ -221,6 +224,7 @@ main{
     }
 
     /* INDUMENTARIA */
+
     main{
         .titulos-indumentaria{
             font-size: 20px;
@@ -249,13 +253,13 @@ main{
             border-radius: 6px;
             margin: 2%;
             height: 430px;
-        }
-        .borde-interno-texto{
-            border: 1px solid rgb(179, 179, 179);
-            border-radius: 6px;
-            margin: 1%;
-            height: 370px;
-            font-size: 25px;
+            .borde-interno-texto{
+                border: 1px solid rgb(179, 179, 179);
+                border-radius: 6px;
+                margin: 1%;
+                height: 370px;
+                font-size: 25px;
+            }
         }
     }
 
@@ -282,8 +286,8 @@ main{
         }
     }
 
-
     /* INDUMENTARIA */
+
     main{
         .titulos-indumentaria{
             font-size: 25px;
@@ -313,10 +317,10 @@ main{
             height: 800px;
         }
         .contenedor-imagenes{
-            height: 800px;
-        }
-        .img-inicio{
-            height: 750px;
+            height: 850px;
+            .img-inicio{
+                height: 800px;
+            }
         }
         .texto{
             height: 450px;
