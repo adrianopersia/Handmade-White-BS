@@ -1,6 +1,8 @@
+@import 'SASS/variables.scss';
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 header{
     text-align: center;
@@ -97,9 +99,13 @@ main{
         grid-column: 2/3;
     }
     i{
+        color: black;
         font-size: 40px;
         grid-column: 2/3;
         margin-top: 10px;
+    }
+    i:hover{
+        color: grey;
     }
 }
 
@@ -133,6 +139,8 @@ main{
 
 /* CONTACTO */
 
+
+
 main{
     .cabeza{
         color: black;
@@ -145,6 +153,7 @@ main{
         color: black;
     }
 }
+
 
 @media only screen and (min-width:425px){
     .img-inicio{
@@ -319,7 +328,7 @@ main{
         .contenedor-imagenes{
             height: 850px;
             .img-inicio{
-                height: 800px;
+                height: 900px;
             }
         }
         .texto{
@@ -348,6 +357,7 @@ main{
     }
 
     /* INDUMENTARIA */
+
     main{
         .titulos-indumentaria{
             font-size: 35px;
@@ -364,6 +374,7 @@ main{
     }
 
     /* CONTACTO */
+
     main{
         .cabeza{
             font-size: 45px;
@@ -388,5 +399,4 @@ main{
             font-size: 30px;
         }
     }
-    
 }

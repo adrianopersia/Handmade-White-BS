@@ -1,0 +1,24 @@
+$primary: rgb(171, 87, 223);
+$secondary: rgb(104, 68, 68);
+$tercero: rgb(151, 148, 148);
+$cuarto: rgb(193, 70, 70);
+$font-size: 50px;
+$brand: 'pr';
+
+.#{pr}-precio1{
+    font-size: $font-size;
+    color: $primary;
+}
+.#{pr}-precio2{
+    font-size: $font-size;
+    color: $secondary;
+}
+.#{pr}-precio3{
+    font-size: $font-size;
+    color: $tercero;
+}
+.#{pr}-precio4{
+    font-size: $font-size;
+    color: $cuarto;
+}
+

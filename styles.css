@@ -1,6 +1,26 @@
+.pr-precio1 {
+  font-size: 50px;
+  color: rgb(171, 87, 223);
+}
+
+.pr-precio2 {
+  font-size: 50px;
+  color: rgb(104, 68, 68);
+}
+
+.pr-precio3 {
+  font-size: 50px;
+  color: rgb(151, 148, 148);
+}
+
+.pr-precio4 {
+  font-size: 50px;
+  color: rgb(193, 70, 70);
+}
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 header {
@@ -16,7 +36,7 @@ header ul {
   font-size: 14px;
   font-weight: 700;
 }
-header a {
+header ul a {
   color: black;
 }
 
@@ -28,18 +48,18 @@ main video {
   height: 100%;
   padding: 1%;
 }
-main .img-inicio {
-  height: 225px;
-  width: auto;
-  padding: 1%;
-}
-main .row {
-  justify-content: center;
-  margin: 0;
-}
 main .contenedor-imagenes {
   padding: 2%;
   justify-items: center;
+}
+main .contenedor-imagenes .row {
+  justify-content: center;
+  margin: 0;
+}
+main .contenedor-imagenes .row .img-inicio {
+  height: 225px;
+  width: auto;
+  padding: 1%;
 }
 main .borde-texto {
   border-top: 1px solid grey;
@@ -48,13 +68,13 @@ main .borde-texto {
   padding: 0;
   width: 90%;
 }
-main .texto {
+main .borde-texto .texto {
   border: 2px solid grey;
   border-radius: 6px;
   margin: 2%;
   height: 350px;
 }
-main .borde-interno-texto {
+main .borde-texto .texto .borde-interno-texto {
   border: 1px solid rgb(179, 179, 179);
   border-radius: 6px;
   margin: 1%;
@@ -81,16 +101,16 @@ main .borde-interno-texto {
   grid-column: 1/2;
   text-align: left;
 }
-.grilla-footer .navbar-nav {
-  border-top: 1px solid grey;
-}
-.grilla-footer .p-footer {
+.grilla-footer .navbar .p-footer {
   margin: 0;
 }
-.grilla-footer a {
+.grilla-footer .navbar .navbar-nav {
+  border-top: 1px solid grey;
+}
+.grilla-footer .navbar .navbar-nav a {
   color: black;
 }
-.grilla-footer a:hover {
+.grilla-footer .navbar .navbar-nav a:hover {
   color: grey;
 }
 .grilla-footer .logo-footer {
@@ -99,9 +119,13 @@ main .borde-interno-texto {
   grid-column: 2/3;
 }
 .grilla-footer i {
+  color: black;
   font-size: 40px;
   grid-column: 2/3;
   margin-top: 10px;
+}
+.grilla-footer i:hover {
+  color: grey;
 }
 
 /* INDUMENTARIA */
@@ -147,18 +171,18 @@ main .btn {
   }
 }
 @media only screen and (min-width: 768px) {
-  main .logo {
+  header .logo {
     height: 200px;
     width: auto;
   }
-  main .nav {
+  header .nav {
     font-size: 20px;
-  }
-  main .img-inicio {
-    height: 250px;
   }
   main video {
     height: 300px;
+  }
+  main .img-inicio {
+    height: 250px;
   }
   .grilla-footer .navbar-nav {
     border-top: 1px solid grey;
@@ -230,7 +254,7 @@ main .btn {
     margin: 2%;
     height: 430px;
   }
-  main .borde-interno-texto {
+  main .texto .borde-interno-texto {
     border: 1px solid rgb(179, 179, 179);
     border-radius: 6px;
     margin: 1%;
@@ -284,10 +308,10 @@ main .btn {
     height: 800px;
   }
   main .contenedor-imagenes {
-    height: 800px;
+    height: 850px;
   }
-  main .img-inicio {
-    height: 750px;
+  main .contenedor-imagenes .img-inicio {
+    height: 900px;
   }
   main .texto {
     height: 450px;

@@ -1,0 +1,30 @@
+%btn{
+    height: 40px;
+    min-width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+    box-shadow: 2px 2px 6px 2px black;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.#{$pr}--btn-precio1{
+    @extend %btn;
+    background: $primary;
+}
+.#{$pr}--btn-precio2{
+    @extend %btn;
+    background: $secondary;
+}
+.#{$pr}--btn-precio3{
+    @extend %btn;
+    background: $tercero;
+}
+.#{$pr}--btn-precio4{
+    @extend %btn;
+    background: $cuarto;
+}
