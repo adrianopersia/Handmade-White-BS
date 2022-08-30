@@ -16,7 +16,7 @@ header ul {
   font-size: 14px;
   font-weight: 700;
 }
-header a {
+header ul a {
   color: black;
 }
 
@@ -26,20 +26,20 @@ main {
 main video {
   width: 100%;
   height: 100%;
-  padding: 1%;
 }
-main .img-inicio {
-  height: 225px;
-  width: auto;
+main .contenedor-imagenes {
   padding: 1%;
+  justify-items: center;
 }
-main .row {
+main .contenedor-imagenes .row {
   justify-content: center;
   margin: 0;
 }
-main .contenedor-imagenes {
-  padding: 2%;
-  justify-items: center;
+main .contenedor-imagenes .row .img-inicio {
+  height: 230px;
+  width: auto;
+  padding: 1%;
+  border-radius: 6px;
 }
 main .borde-texto {
   border-top: 1px solid grey;
@@ -48,17 +48,21 @@ main .borde-texto {
   padding: 0;
   width: 90%;
 }
-main .texto {
+main .borde-texto .texto {
   border: 2px solid grey;
   border-radius: 6px;
   margin: 2%;
   height: 350px;
 }
-main .borde-interno-texto {
+main .borde-texto .texto .borde-interno-texto {
   border: 1px solid rgb(179, 179, 179);
   border-radius: 6px;
   margin: 1%;
   height: 300px;
+}
+main .carousel-inner .carousel-item .img-carousel {
+  width: 100%;
+  height: 100%;
 }
 
 .grilla-footer {
@@ -81,16 +85,16 @@ main .borde-interno-texto {
   grid-column: 1/2;
   text-align: left;
 }
-.grilla-footer .navbar-nav {
-  border-top: 1px solid grey;
-}
-.grilla-footer .p-footer {
+.grilla-footer .navbar .p-footer {
   margin: 0;
 }
-.grilla-footer a {
+.grilla-footer .navbar .navbar-nav {
+  border-top: 1px solid grey;
+}
+.grilla-footer .navbar .navbar-nav a {
   color: black;
 }
-.grilla-footer a:hover {
+.grilla-footer .navbar .navbar-nav a:hover {
   color: grey;
 }
 .grilla-footer .logo-footer {
@@ -102,6 +106,7 @@ main .borde-interno-texto {
   font-size: 40px;
   grid-column: 2/3;
   margin-top: 10px;
+  color: black;
 }
 
 /* INDUMENTARIA */
@@ -110,20 +115,32 @@ main .titulos-indumentaria {
   border-bottom: 1px solid rgb(179, 179, 179);
   text-align: center;
 }
-main .img-buzo {
-  height: 190px;
+main .contenedor-buzos .row {
+  justify-content: center;
+}
+main .contenedor-buzos .row .img-buzo {
+  height: 210px;
   width: auto;
   padding: 1%;
   border-radius: 6px;
 }
-main .img-remeras {
-  height: 190px;
+main .contenedor-remeras .row {
+  justify-content: center;
+}
+main .contenedor-remeras .row .img-remeras {
+  height: 210px;
   width: auto;
   padding: 1%;
   border-radius: 6px;
 }
-main .img-camperas {
-  height: 190px;
+main .contenedor-camperas {
+  height: 500px;
+}
+main .contenedor-camperas .row {
+  justify-content: center;
+}
+main .contenedor-camperas .row .img-camperas {
+  height: 210px;
   width: auto;
   padding: 1%;
   border-radius: 6px;
@@ -142,23 +159,25 @@ main .btn {
 }
 
 @media only screen and (min-width: 425px) {
-  .img-inicio {
-    height: 280px;
+  main .contenedor-imagenes .row .img-inicio {
+    height: 310px;
+    border-radius: 8px;
   }
 }
 @media only screen and (min-width: 768px) {
-  main .logo {
+  header .logo {
     height: 200px;
     width: auto;
   }
-  main .nav {
+  header .nav {
     font-size: 20px;
   }
-  main .img-inicio {
-    height: 250px;
-  }
   main video {
+    height: 100%;
+  }
+  main .contenedor-imagenes .row .img-inicio {
     height: 300px;
+    border-radius: 12px;
   }
   .grilla-footer .navbar-nav {
     border-top: 1px solid grey;
@@ -180,16 +199,13 @@ main .btn {
     padding-left: 2%;
   }
   /* INDUMENTARIA */
-  main .titulos-indumentaria {
-    font-size: 20px;
-  }
-  main .img-buzo {
+  main .contenedor-buzos .row .img-buzo {
     height: 250px;
   }
-  main .img-remeras {
+  main .contenedor-remeras .row .img-remeras {
     height: 250px;
   }
-  main .img-camperas {
+  main .contenedor-camperas .row .img-camperas {
     height: 250px;
   }
 }
@@ -200,41 +216,49 @@ main .btn {
   main .contenedor-imagenes {
     height: 400px;
   }
-  main .img-inicio {
-    height: 350px;
+  main .contenedor-imagenes .row .img-inicio {
+    height: 380px;
+    border-radius: 14px;
   }
   /* INDUMENTARIA */
-  main .titulos-indumentaria {
+  main .contenedor-buzos .titulos-indumentaria {
     font-size: 20px;
   }
-  main .img-buzo {
-    height: 320px;
+  main .contenedor-buzos .row .img-buzo {
+    height: 300px;
   }
-  main .img-remeras {
-    height: 320px;
+  main .contenedor-remeras .titulos-indumentaria {
+    font-size: 20px;
   }
-  main .img-camperas {
-    height: 320px;
+  main .contenedor-remeras .row .img-remeras {
+    height: 300px;
+  }
+  main .contenedor-camperas .titulos-indumentaria {
+    font-size: 20px;
+  }
+  main .contenedor-camperas .row .img-camperas {
+    height: 300px;
   }
 }
 @media only screen and (min-width: 1440px) {
   main .contenedor-imagenes {
+    height: 520px;
+  }
+  main .contenedor-imagenes .row .img-inicio {
     height: 500px;
+    border-radius: 18px;
   }
-  main .img-inicio {
-    height: 450px;
-  }
-  main .texto {
+  main .borde-texto .texto {
     border: 2px solid grey;
     border-radius: 6px;
     margin: 2%;
-    height: 430px;
+    height: 360px;
   }
-  main .borde-interno-texto {
+  main .borde-texto .texto .borde-interno-texto {
     border: 1px solid rgb(179, 179, 179);
     border-radius: 6px;
     margin: 1%;
-    height: 370px;
+    height: 300px;
     font-size: 25px;
   }
   .grilla-footer {
@@ -260,17 +284,26 @@ main .btn {
     grid-column: 3/4;
   }
   /* INDUMENTARIA */
-  main .titulos-indumentaria {
+  main .contenedor-buzos .titulos-indumentaria {
     font-size: 25px;
   }
-  main .img-buzo {
-    height: 440px;
+  main .contenedor-buzos .row .img-buzo {
+    height: 450px;
   }
-  main .img-remeras {
-    height: 440px;
+  main .contenedor-remeras .titulos-indumentaria {
+    font-size: 25px;
   }
-  main .img-camperas {
-    height: 440px;
+  main .contenedor-remeras .row .img-remeras {
+    height: 450px;
+  }
+  main .contenedor-camperas {
+    height: 800px;
+  }
+  main .contenedor-camperas .titulos-indumentaria {
+    font-size: 25px;
+  }
+  main .contenedor-camperas .row .img-camperas {
+    height: 450px;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -281,16 +314,17 @@ main .btn {
     font-size: 30px;
   }
   main video {
-    height: 800px;
+    height: auto;
+    padding: 0;
   }
   main .contenedor-imagenes {
-    height: 800px;
+    height: 850px;
   }
-  main .img-inicio {
-    height: 750px;
+  main .contenedor-imagenes .row .img-inicio {
+    height: 850px;
   }
-  main .texto {
-    height: 450px;
+  main .borde-texto .texto .borde-interno-texto {
+    height: 260px;
   }
   main .navbar-nav {
     font-size: 35px;
@@ -310,17 +344,26 @@ main .btn {
     font-size: 80px;
   }
   /* INDUMENTARIA */
-  main .titulos-indumentaria {
-    font-size: 35px;
+  main .contenedor-buzos .titulos-indumentaria {
+    font-size: 30px;
   }
-  main .img-buzo {
-    height: 800px;
+  main .contenedor-buzos .row .img-buzo {
+    height: 700px;
   }
-  main .img-remeras {
-    height: 800px;
+  main .contenedor-remeras .titulos-indumentaria {
+    font-size: 30px;
   }
-  main .img-camperas {
-    height: 800px;
+  main .contenedor-remeras .row .img-remeras {
+    height: 700px;
+  }
+  main .contenedor-camperas {
+    height: 1000px;
+  }
+  main .contenedor-camperas .titulos-indumentaria {
+    font-size: 30px;
+  }
+  main .contenedor-camperas .row .img-camperas {
+    height: 700px;
   }
   /* CONTACTO */
   main .cabeza {
