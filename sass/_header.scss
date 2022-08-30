@@ -1,0 +1,22 @@
+@mixin font($size,$weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+header{
+    text-align: center;
+    img{
+        width: 300px;
+        height: 100%;
+        text-align: center;
+    }
+    ul{
+        justify-content: center;
+        @include font(14px,700);
+        a{
+            color: black;
+        }
+        a:hover{
+            color: grey;
+        }
+    } 
+}

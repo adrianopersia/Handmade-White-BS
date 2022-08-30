@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+header img {
+  width: 300px;
+  height: 100%;
+  text-align: center;
+}
+header ul {
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+header ul a {
+  color: black;
+}
+header ul a:hover {
+  color: grey;
+}
+
+main {
+  background-color: white;
+}
+main video {
+  width: 100%;
+  height: 100%;
+}
+main .contenedor-imagenes {
+  padding: 1%;
+  justify-items: center;
+}
+main .contenedor-imagenes .row {
+  justify-content: center;
+  margin: 0;
+}
+main .contenedor-imagenes .row .img-inicio {
+  height: 230px;
+  width: auto;
+  padding: 1%;
+  border-radius: 6px;
+}
+main .borde-texto {
+  border-top: 1px solid grey;
+  text-align: center;
+  margin-top: 2%;
+  padding: 0;
+  width: 90%;
+}
+main .borde-texto .texto {
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin: 2%;
+  height: 350px;
+}
+main .borde-texto .texto .borde-interno-texto {
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 6px;
+  margin: 1%;
+  height: 300px;
+}
+main .carousel-inner .carousel-item .img-carousel {
+  width: 100%;
+  height: 100%;
+}
+
+/* INDUMENTARIA */
+.features, main .contenedor-camperas .row .img-camperas, main .contenedor-remeras .row .img-remeras, main .contenedor-buzos .row .img-buzo {
+  height: 210px;
+  width: auto;
+  padding: 1%;
+  border-radius: 6px;
+}
+
+main .titulos-indumentaria {
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  text-align: center;
+}
+main .contenedor-buzos .row {
+  justify-content: center;
+}
+main .contenedor-remeras .row {
+  justify-content: center;
+}
+main .contenedor-camperas {
+  height: 500px;
+}
+main .contenedor-camperas .row {
+  justify-content: center;
+}
+/* CONTACTO */
+main .cabeza {
+  color: black;
+  font-size: 27px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+main .btn {
+  background-color: rgb(179, 179, 179);
+  color: black;
+}
+
+/* MEDIA QUERYS */
+@media only screen and (min-width: 425px) {
+  main .contenedor-imagenes .row .img-inicio {
+    height: 310px;
+    border-radius: 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header .logo {
+    height: 200px;
+    width: auto;
+  }
+  header .nav {
+    font-size: 20px;
+  }
+  main video {
+    height: 100%;
+  }
+  main .contenedor-imagenes .row .img-inicio {
+    height: 300px;
+    border-radius: 12px;
+  }
+  .grilla-footer .navbar-nav {
+    border-top: 1px solid grey;
+    font-size: 20px;
+    text-align: left;
+  }
+  .grilla-footer .p-footer {
+    margin: 0;
+    font-size: 20px;
+  }
+  .grilla-footer .logo-footer {
+    width: 260px;
+    height: 100px;
+    justify-items: center;
+  }
+  .grilla-footer .redes i {
+    font-size: 50px;
+    text-align: center;
+    padding-left: 2%;
+  }
+  /* INDUMENTARIA */
+  main .contenedor-buzos .row .img-buzo {
+    height: 250px;
+  }
+  main .contenedor-remeras .row .img-remeras {
+    height: 250px;
+  }
+  main .contenedor-camperas .row .img-camperas {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main video {
+    height: 450px;
+  }
+  main .contenedor-imagenes {
+    height: 400px;
+  }
+  main .contenedor-imagenes .row .img-inicio {
+    height: 380px;
+    border-radius: 14px;
+  }
+  /* INDUMENTARIA */
+  main .contenedor-buzos .titulos-indumentaria {
+    font-size: 20px;
+  }
+  main .contenedor-buzos .row .img-buzo {
+    height: 300px;
+  }
+  main .contenedor-remeras .titulos-indumentaria {
+    font-size: 20px;
+  }
+  main .contenedor-remeras .row .img-remeras {
+    height: 300px;
+  }
+  main .contenedor-camperas .titulos-indumentaria {
+    font-size: 20px;
+  }
+  main .contenedor-camperas .row .img-camperas {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  main .contenedor-imagenes {
+    height: 520px;
+  }
+  main .contenedor-imagenes .row .img-inicio {
+    height: 500px;
+    border-radius: 18px;
+  }
+  main .borde-texto .texto {
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 2%;
+    height: 360px;
+  }
+  main .borde-texto .texto .borde-interno-texto {
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 6px;
+    margin: 1%;
+    height: 300px;
+    font-size: 25px;
+  }
+  .grilla-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+  .grilla-footer footer {
+    background-color: white;
+    display: block;
+    border-top: 1px solid grey;
+  }
+  .grilla-footer .p-footer {
+    margin: 0;
+  }
+  .grilla-footer .logo-footer {
+    width: auto;
+    height: 150px;
+    grid-column: 2/3;
+  }
+  .grilla-footer .redes {
+    grid-column: 3/4;
+  }
+  /* INDUMENTARIA */
+  main .contenedor-buzos .titulos-indumentaria {
+    font-size: 25px;
+  }
+  main .contenedor-buzos .row .img-buzo {
+    height: 450px;
+  }
+  main .contenedor-remeras .titulos-indumentaria {
+    font-size: 25px;
+  }
+  main .contenedor-remeras .row .img-remeras {
+    height: 450px;
+  }
+  main .contenedor-camperas {
+    height: 800px;
+  }
+  main .contenedor-camperas .titulos-indumentaria {
+    font-size: 25px;
+  }
+  main .contenedor-camperas .row .img-camperas {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .header .logo {
+    width: 600px;
+  }
+  .header .nav {
+    font-size: 30px;
+  }
+  main video {
+    height: auto;
+    padding: 0;
+  }
+  main .contenedor-imagenes {
+    height: 850px;
+  }
+  main .contenedor-imagenes .row .img-inicio {
+    height: 850px;
+  }
+  main .borde-texto .texto .borde-interno-texto {
+    height: 260px;
+  }
+  main .navbar-nav {
+    font-size: 35px;
+    width: 170px;
+  }
+  .grilla-footer .p-footer {
+    font-size: 45px;
+  }
+  .grilla-footer .navbar-nav {
+    font-size: 45px;
+    width: 220px;
+  }
+  .grilla-footer .logo-footer {
+    height: 200px;
+  }
+  .grilla-footer .redes i {
+    font-size: 80px;
+  }
+  /* INDUMENTARIA */
+  main .contenedor-buzos .titulos-indumentaria {
+    font-size: 30px;
+  }
+  main .contenedor-buzos .row .img-buzo {
+    height: 700px;
+  }
+  main .contenedor-remeras .titulos-indumentaria {
+    font-size: 30px;
+  }
+  main .contenedor-remeras .row .img-remeras {
+    height: 700px;
+  }
+  main .contenedor-camperas {
+    height: 1000px;
+  }
+  main .contenedor-camperas .titulos-indumentaria {
+    font-size: 30px;
+  }
+  main .contenedor-camperas .row .img-camperas {
+    height: 700px;
+  }
+  /* CONTACTO */
+  main .cabeza {
+    font-size: 45px;
+  }
+  main #fname {
+    font-size: 30px;
+    height: 100px;
+  }
+  main #lname {
+    font-size: 30px;
+    height: 100px;
+  }
+  main #email {
+    font-size: 30px;
+    height: 100px;
+  }
+  main #phone {
+    font-size: 30px;
+    height: 100px;
+  }
+  main .form-control {
+    font-size: 30px;
+  }
+}
+.grilla-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  border-top: 1px solid grey;
+}
+.grilla-footer footer {
+  background-color: white;
+  display: block;
+}
+.grilla-footer .navbar {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  display: inline-block;
+  grid-column: 1/2;
+  text-align: left;
+}
+.grilla-footer .navbar .p-footer {
+  margin: 0;
+}
+.grilla-footer .navbar .navbar-nav {
+  border-top: 1px solid grey;
+}
+.grilla-footer .navbar .navbar-nav a {
+  color: black;
+}
+.grilla-footer .navbar .navbar-nav a:hover {
+  color: grey;
+}
+.grilla-footer .logo-footer {
+  width: 160px;
+  height: 70px;
+  grid-column: 2/3;
+}
+.grilla-footer i {
+  font-size: 40px;
+  grid-column: 2/3;
+  margin-top: 10px;
+  color: black;
+}/*# sourceMappingURL=styles.css.map */
