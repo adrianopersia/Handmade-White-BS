@@ -19,6 +19,9 @@ header ul {
 header ul a {
   color: black;
 }
+header ul a:hover {
+  color: grey;
+}
 
 main {
   background-color: white;
