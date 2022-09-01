@@ -128,9 +128,6 @@ main{
         }
     }
     main{
-        video{
-            height: 100%;
-        }
         .contenedor-imagenes{
             .row{
                 .img-inicio{
@@ -192,9 +189,6 @@ main{
 }
 @media only screen and (min-width:1024px){
     main{
-        video{
-            height: 450px;
-        }
         .contenedor-imagenes{
             height: 400px;
             .row{
