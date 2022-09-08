@@ -23,6 +23,50 @@ header ul a:hover {
   color: grey;
 }
 
+.grilla-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  border-top: 1px solid grey;
+}
+.grilla-footer footer {
+  background-color: white;
+  display: block;
+}
+.grilla-footer .navbar {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  display: inline-block;
+  grid-column: 1/2;
+  text-align: left;
+}
+.grilla-footer .navbar .p-footer {
+  margin: 0;
+}
+.grilla-footer .navbar .navbar-nav {
+  border-top: 1px solid grey;
+}
+.grilla-footer .navbar .navbar-nav a {
+  color: black;
+}
+.grilla-footer .navbar .navbar-nav a:hover {
+  color: grey;
+}
+.grilla-footer .logo-footer {
+  width: 160px;
+  height: 70px;
+  grid-column: 2/3;
+}
+.grilla-footer i {
+  font-size: 40px;
+  grid-column: 2/3;
+  margin-top: 10px;
+  color: black;
+}
+
 main {
   background-color: white;
 }
@@ -38,11 +82,28 @@ main .contenedor-imagenes .row {
   justify-content: center;
   margin: 0;
 }
-main .contenedor-imagenes .row .img-inicio {
-  height: 230px;
+main .contenedor-imagenes .row #demo .carousel-inner .carousel-item .img-inicio {
+  height: 190px;
   width: auto;
   padding: 1%;
   border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+main .contenedor-imagenes .row #demo .carousel-inner .subimagen {
+  border: solid 1px grey;
+  width: 80%;
+  border-radius: 4px;
+  justify-content: center;
+  margin-left: 16px;
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: rgb(217, 216, 216);
+  background: linear-gradient(0deg, rgb(217, 216, 216) 20%, rgb(255, 248, 248) 60%);
+}
+main .contenedor-imagenes .row #demo .carousel-inner .subimagen p {
+  border-top: solid 1px grey;
 }
 main .borde-texto {
   border-top: 1px solid grey;
@@ -108,9 +169,19 @@ main .btn {
 
 /* MEDIA QUERYS */
 @media only screen and (min-width: 425px) {
-  main .contenedor-imagenes .row .img-inicio {
-    height: 310px;
+  main .contenedor-imagenes .row #demo .carousel-inner .carousel-item .img-inicio {
+    height: 260px;
     border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  main .contenedor-imagenes .row #demo .carousel-inner .subimagen {
+    width: 85%;
+    border-radius: 4px;
+    margin-left: 16.5px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -121,9 +192,19 @@ main .btn {
   header .nav {
     font-size: 20px;
   }
-  main .contenedor-imagenes .row .img-inicio {
-    height: 300px;
+  main .contenedor-imagenes .row #demo .carousel-inner .carousel-item .img-inicio {
+    height: 230px;
     border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  main .contenedor-imagenes .row #demo .carousel-inner .subimagen {
+    width: 83.5%;
+    border-radius: 4px;
+    margin-left: 15px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   .grilla-footer .navbar-nav {
     border-top: 1px solid grey;
@@ -159,9 +240,20 @@ main .btn {
   main .contenedor-imagenes {
     height: 400px;
   }
-  main .contenedor-imagenes .row .img-inicio {
-    height: 380px;
+  main .contenedor-imagenes .row #demo .carousel-inner .carousel-item .img-inicio {
+    height: 330px;
     border-radius: 14px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  main .contenedor-imagenes .row #demo .carousel-inner .subimagen {
+    font-size: 20px;
+    width: 88%;
+    border-radius: 4px;
+    margin-left: 15px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   /* INDUMENTARIA */
   main .contenedor-buzos .titulos-indumentaria {
@@ -185,11 +277,22 @@ main .btn {
 }
 @media only screen and (min-width: 1440px) {
   main .contenedor-imagenes {
-    height: 520px;
+    height: 550px;
   }
-  main .contenedor-imagenes .row .img-inicio {
-    height: 500px;
+  main .contenedor-imagenes .row #demo .carousel-inner .carousel-item .img-inicio {
+    height: 480px;
     border-radius: 18px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  main .contenedor-imagenes .row #demo .carousel-inner .subimagen {
+    font-size: 20px;
+    width: 91.5%;
+    border-radius: 4px;
+    margin-left: 15px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   main .borde-texto .texto {
     border: 2px solid grey;
@@ -261,10 +364,19 @@ main .btn {
     padding: 0;
   }
   main .contenedor-imagenes {
+    height: 950px;
+  }
+  main .contenedor-imagenes .row #demo .carousel-inner .carousel-item .img-inicio {
     height: 850px;
   }
-  main .contenedor-imagenes .row .img-inicio {
-    height: 850px;
+  main .contenedor-imagenes .row #demo .carousel-inner .subimagen {
+    font-size: 30px;
+    width: 95%;
+    border-radius: 4px;
+    margin-left: 15px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   main .borde-texto .texto .borde-interno-texto {
     height: 260px;
@@ -332,46 +444,5 @@ main .btn {
     font-size: 30px;
   }
 }
-.grilla-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  text-align: center;
-  border-top: 1px solid grey;
-}
-.grilla-footer footer {
-  background-color: white;
-  display: block;
-}
-.grilla-footer .navbar {
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  width: 100px;
-  display: inline-block;
-  grid-column: 1/2;
-  text-align: left;
-}
-.grilla-footer .navbar .p-footer {
-  margin: 0;
-}
-.grilla-footer .navbar .navbar-nav {
-  border-top: 1px solid grey;
-}
-.grilla-footer .navbar .navbar-nav a {
-  color: black;
-}
-.grilla-footer .navbar .navbar-nav a:hover {
-  color: grey;
-}
-.grilla-footer .logo-footer {
-  width: 160px;
-  height: 70px;
-  grid-column: 2/3;
-}
-.grilla-footer i {
-  font-size: 40px;
-  grid-column: 2/3;
-  margin-top: 10px;
-  color: black;
-}/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles.css.map */

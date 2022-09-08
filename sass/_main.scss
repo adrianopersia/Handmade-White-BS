@@ -10,12 +10,36 @@ main{
         .row{
             justify-content: center;
             margin: 0;
-            .img-inicio{
-                height: 230px;
-                width: auto;
-                padding: 1%;
-                border-radius: 6px;
+            #demo{
+                .carousel-inner{
+                    .carousel-item{
+                        .img-inicio{
+                            height: 190px;
+                            width: auto;
+                            padding: 1%;
+                            border-radius: 6px;
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                        }
+                    }
+                    .subimagen{
+                        border: solid 1px grey;
+                        width: 80%;
+                        border-radius: 4px;
+                        justify-content: center;
+                        margin-left: 16px;
+                        border-top: 0;
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                        background: rgb(217,216,216);
+                        background: linear-gradient(0deg, rgba(217,216,216,1) 20%, rgba(255,248,248,1) 60%);
+                        p{
+                            border-top: solid 1px grey;
+                        }
+                    }  
+                }
             }
+             
         }
     }
     .borde-texto{
@@ -109,10 +133,26 @@ main{
     main{
         .contenedor-imagenes{
             .row{
-                .img-inicio{
-                    height: 310px;
-                    border-radius: 8px;
-                }
+                #demo{
+                    .carousel-inner{
+                        .carousel-item{
+                            .img-inicio{
+                                height: 260px;
+                                border-radius: 8px;
+                                border-bottom-left-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
+                        }
+                        .subimagen{
+                            width: 85%;
+                            border-radius: 4px;
+                            margin-left: 16.5px;
+                            border-top: 0;
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                        }  
+                    }
+                } 
             }
         } 
     } 
@@ -130,10 +170,26 @@ main{
     main{
         .contenedor-imagenes{
             .row{
-                .img-inicio{
-                    height: 300px;
-                    border-radius: 12px;
-                }
+                #demo{
+                    .carousel-inner{
+                        .carousel-item{
+                            .img-inicio{
+                                height: 230px;
+                                border-radius: 12px;
+                                border-bottom-left-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
+                        }
+                        .subimagen{
+                            width: 83.5%;
+                            border-radius: 4px;
+                            margin-left: 15px;
+                            border-top: 0;
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                        }
+                    }
+                } 
             }
         }
     }
@@ -192,10 +248,27 @@ main{
         .contenedor-imagenes{
             height: 400px;
             .row{
-                .img-inicio{
-                    height: 380px;
-                    border-radius: 14px;
-                }
+                #demo{
+                    .carousel-inner{
+                        .carousel-item{
+                            .img-inicio{
+                                height: 330px;
+                                border-radius: 14px;
+                                border-bottom-left-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
+                        }
+                        .subimagen{
+                            font-size: 20px;
+                            width: 88%;
+                            border-radius: 4px;
+                            margin-left: 15px;
+                            border-top: 0;
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                        }
+                    }
+                } 
             }
         }
     }
@@ -238,12 +311,29 @@ main{
 @media only screen and (min-width:1440px){
     main{
         .contenedor-imagenes{
-            height: 520px;
+            height: 550px;
             .row{
-                .img-inicio{
-                    height: 500px;
-                    border-radius: 18px;
-                }
+                #demo{
+                    .carousel-inner{
+                        .carousel-item{
+                            .img-inicio{
+                                height: 480px;
+                                border-radius: 18px;
+                                border-bottom-left-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
+                        }
+                        .subimagen{
+                            font-size: 20px;
+                            width: 91.5%;
+                            border-radius: 4px;
+                            margin-left: 15px;
+                            border-top: 0;
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                        }
+                    }
+                } 
             }
         }
         .borde-texto{
@@ -337,11 +427,26 @@ main{
             padding: 0;
         }
         .contenedor-imagenes{
-            height: 850px;
+            height: 950px;
             .row{
-                .img-inicio{
-                    height: 850px;
-                }
+                #demo{
+                    .carousel-inner{
+                        .carousel-item{
+                            .img-inicio{
+                                height: 850px;
+                            }
+                        }
+                        .subimagen{
+                            font-size: 30px;
+                            width: 95%;
+                            border-radius: 4px;
+                            margin-left: 15px;
+                            border-top: 0;
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                        }
+                    }
+                } 
             }
         }
         .borde-texto{
